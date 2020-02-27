@@ -254,6 +254,9 @@ footer .row.content{
     .intro .paragraphs p.first::after{
         left:-71px;
     }
+    .author{
+        padding-bottom: 55px;
+    }
 }
 
 @media (max-width: 375px) {
