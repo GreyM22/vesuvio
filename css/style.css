@@ -29,6 +29,7 @@ header h1 {
     font-size  : 54px;
     font-weight: 700;
     line-height: 66px;
+    max-width: 480px;
 }
 
 header h6 {
