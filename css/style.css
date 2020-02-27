@@ -65,6 +65,10 @@ header .bottom-bar {
 .navbar-light .navbar-toggler:focus{
     outline: none;
 }
+
+.navbar-brand::before{
+    content: url(../images/logo.svg);
+}
 /* ------ intro ------ */
 
 .intro {
@@ -126,6 +130,10 @@ header .bottom-bar {
 
 .intro .gallery .first-img {
     margin-top: 69px;
+}
+
+.intro .gallery .img-fluid{
+    width: 100%;
 }
 
 /* ------ footer ------ */
@@ -235,6 +243,15 @@ footer .row.content{
 @media (max-width: 767px) {
     .intro .gallery .first-img {
         margin-top: 0;
+    }
+    header h1{
+        margin-top: 71px;
+    }
+    .intro .paragraphs p.first::before{
+        left: -15px;
+    }
+    .intro .paragraphs p.first::after{
+        left:-71px;
     }
 }
 
