@@ -4,13 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
     <title>Vesuvio</title>
+    <meta name="title" content="Vesuvio">
+    <meta name="description" content="A contemporary yet relaxed space to meet, dine and drink">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vesuvio.bonfork.net/">
+    <meta property="og:title" content="Vesuvio">
+    <meta property="og:description" content="A contemporary yet relaxed space to meet, dine and drink">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vesuvio.bonfork.net/">
+    <meta property="twitter:title" content="Vesuvio">
+    <meta property="twitter:description" content="A contemporary yet relaxed space to meet, dine and drink">
+    <meta property="twitter:image" content="">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#ff9500">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
     <!-- bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- main style sheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Vesuvio",
+  "image": "/images/header.jpg",
+  "@id": "",
+  "url": "https://vesuvio.bonfork.net",
+  "telephone": "6470292091",
+  "priceRange": "$",
+  "menu": "",
+  "servesCuisine": "Sea Food",
+  "acceptsReservations": "true",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 Yonge Street",
+    "addressLocality": "Toronto",
+    "addressRegion": "ON",
+    "postalCode": "M4K 2H1",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.658023,
+    "longitude": -79.381366
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Monday",
+    "opens": "08:00",
+    "closes": "18:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Tuesday",
+    "opens": "08:00",
+    "closes": "18:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Wednesday",
+    "opens": "08:00",
+    "closes": "18:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Thursday",
+    "opens": "08:00",
+    "closes": "18:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Friday",
+    "opens": "08:00",
+    "closes": "18:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Saturday",
+    "opens": "08:00",
+    "closes": "18:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Sunday",
+    "opens": "08:00",
+    "closes": "18:00"
+  }]
+}
+    </script>
 </head>
 
 <body>
@@ -58,7 +150,7 @@
             <h2>
                 Welcome to the <br> <b>flagship</b> restaurant
             </h2>
-            <div class="paragraphs d-flex flex-row justify-content-center">
+            <div class="paragraphs d-flex flex-md-row flex-column justify-content-center">
                 <p class="first position-relative">
                     Over twenty years on and still going strong: When Teage Ezard launched his flagship restaurant EZARD
                     in 1999, he quickly earnt a reputation as one of the city’s leading exponents of degustation dining.
@@ -69,12 +161,12 @@
                     in 1999, he quickly earnt a reputation as one of the city’s leading exponents of degustation dining.
                 </p>
             </div>
-            <div class=" gallery row mx-5 px-5">
-                <div class="col-sm-6 pr-sm-4">
+            <div class=" gallery row mx-md-5 px-md-5">
+                <div class="col-md-6 pr-md-4">
                     <img class="img-fluid" src="/images/gallery-1.jpg" alt="A dish with eggs">
                     <img class="img-fluid" src="/images/gallery-3.jpg" alt="A dish with potato and meat">
                 </div>
-                <div class="col-sm-6 pl-sm-4">
+                <div class="col-md-6 pl-md-4">
                     <img class="img-fluid first-img" src="/images/gallery-2.jpg" alt="A view of the table">
                     <img class="img-fluid" src="/images/gallery-4.jpg" alt="A dish with salmon">
                 </div>
@@ -84,8 +176,8 @@
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-3">
+            <div class="row content">
+                <div class="col-md-3 col-sm-4">
                     <h5>
                         Visit us
                     </h5>
@@ -97,27 +189,50 @@
                         <a title="Call Us!!" href="tel:+6470292091">(647) 029-2091</a> <br>
                     </p>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-4">
                     <h5>
                         Navigate
                     </h5>
                     <p>
-                        <a title="Our Story!" href="#">Story</a>   <br>
-                        <a title="See our food!" href="#">Our Food</a>  <br>
-                        <a title="Gallery" href="#">Gallery</a>  <br>
-                        <a title="Make a reservations!" href="#">Reservations</a>  <br>
+                        <a title="Our Story!" href="#">Story</a> <br>
+                        <a title="See our food!" href="#">Our Food</a> <br>
+                        <a title="Gallery" href="#">Gallery</a> <br>
+                        <a title="Make a reservations!" href="#">Reservations</a> <br>
                     </p>
 
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-4">
                     <h5>
                         Connect
                     </h5>
                     <p>
+                        <form method="POST" id="email-form" action="">
+                            <div class="form-group">
+                                <label for="email">Subcribe to our newsletter</label>
+                                <input type="email" class="w-100" id="email" placeholder="Your email">
+                            </div>
+                        </form>
+                        <ul class="social-net-links p-0">
+                            <li class="">
+                                <a href="https://www.facebook.com/" class="facebook-link"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" class="instagram-link"></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" class="twitter-link"></a>
+                            </li>
+                        </ul>
+
                     </p>
-
-
                 </div>
+            </div>
+        </div>
+        <div class="author">
+            <div class="container">
+                <p class="mb-0">
+                    Restaurant Website by Bonfork
+                </p>
             </div>
         </div>
     </footer>
