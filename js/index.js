@@ -30,9 +30,6 @@
             overflow: 'hidden',
             paddingRight: "".concat(scrollBarWidth, "px")
         });
-        button.css({
-            marginRight: "".concat(scrollBarWidth, "px")
-        });
         $(overlay).fadeIn(300);
     };
 
@@ -51,6 +48,7 @@
         button.toggleClass('header__menu-button_cross');
         button.toggleClass('header__menu-button_burger', !button.hasClass('header__menu-button_cross'));
         panel.toggleClass('header__menu_opened');
+
 
         if (button.hasClass('header__menu-button_cross')) {
             openMenu();

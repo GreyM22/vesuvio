@@ -119,29 +119,51 @@
         <div class="container">
             <nav class="navbar  navbar-light">
                 <a class="navbar-brand" href="#"> </a>
-                <button class="navbar-toggler collapsed text-right" type="button" data-toggle="collapse"
-                    data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="header__menu-button header-button" type="button">
                     <span class="top-bar mr-0 ml-auto"></span>
                     <span class="middle-bar mr-0 ml-auto"></span>
                     <span class="bottom-bar mr-0 ml-auto"></span>
                 </button>
 
-                <div class="navbar-collapse collapse" id="navbarColor03" style="">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
+                <div class="header__overlay"></div>
+                <div class="menu-panel header__menu">
+                    <div class="menu-panel__inner">
+                        <button class="header__menu-button header__menu-button_fixed mr-0 ml-auto toggle-button" type="button">
+                            <span class="top-bar mr-0 ml-auto bg-dark"></span>
+                            <span class="middle-bar mr-0 ml-auto "></span>
+                            <span class="bottom-bar mr-0 ml-auto bg-dark"></span>
+                        </button>
+                        <div class="menu-panel__menu mt-5">
+                            <div class="menu-panel__menu-item">
+                                <a class="menu-panel__menu-link menu-panel__menu-link_active" href="index.html">Home</a>
+                            </div>
+                            <div class="menu-panel__menu-item">
+                                <a class="menu-panel__menu-link" href="#">Work</a>
+                            </div>
+                            <div class="menu-panel__menu-item">
+                                <a class=" menu-panel__menu-link " data-toggle="collapse" href="#">News</a>
+                            </div>
+                            <div class="menu-panel__menu-item">
+                                <a class="menu-panel__menu-link " href="#">Page</a>
+                            </div>
+                        </div>
+                        <div class="menu-panel__footer">
+                            <div class="menu-panel__bottom">
+                                <div class="menu-panel__copyright">©
+                                    <script>
+                                        let year = new Date();
+                                        document.write(year.getFullYear());
+                                    </script>
+
+                                    <strong> Vesuvio </strong>
+                                    All Rights Reserved.
+                                </div>
+                                <div class="menu-panel__author">Design by
+                                    <a href="#">Bonfork</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <h1>

@@ -54,6 +54,7 @@ header .top-bar {
     height    : 2px;
     width     : 32px;
     background: white;
+    transition: all 0.3s 0.3s ease;
 }
 
 header .middle-bar {
@@ -70,6 +71,8 @@ header .bottom-bar {
     height    : 2px;
     width     : 37px;
     background: white;
+    transition: all 0.3s 0.3s ease;
+
 }
 
 .navbar-light .navbar-toggler:focus {
@@ -164,7 +167,8 @@ header .bottom-bar {
 }
 
 .menu-panel__menu-link:hover {
-    color: currentColor;
+    color          : currentColor;
+    text-decoration: none;
 }
 
 .menu-panel__bottom-submenu {
@@ -333,18 +337,63 @@ header .bottom-bar {
     width : 40px;
 }
 
-/* .header__menu-button .top-bar {
-    animation-name: button-before-open-animation;
+.toggle-button .top-bar {
+    width        : 37px;
+    margin-bottom: -12px;
+    transform: rotate(45deg);
+
 }
 
-.header__menu-button_cross .top-bar {
+.toggle-button .bottom-bar {
+    margin-top: 0;
+    transform: rotate(-45deg);
+
+}
+
+.header__menu-button_burger.toggle-button .top-bar{
+    animation-name    : button-before-open-animation;
+    animation-duration: 1s;
+}
+
+.header__menu-button_cross.toggle-button .top-bar{
     animation-name: button-before-close-animation;
+    animation-duration: 1s;
 }
 
+.header__menu-button_burger.toggle-button .bottom-bar {
+    animation-name    : button-after-open-animation;
+    animation-duration: 1s;
+}
+
+.header__menu-button_cross.toggle-button .bottom-bar {
+    animation-name: button-after-close-animation;
+    animation-duration: 1s;
+}
+
+
+.header__menu-button_burger.header-button .top-bar{
+    animation-name    : button-before-close-animation-header;
+    animation-duration: 1s;
+}
+
+.header__menu-button_cross.header-button .top-bar{
+    animation-name: button-before-open-animation-header;
+    animation-duration: 1s;
+}
+
+.header__menu-button_burger.header-button .bottom-bar {
+    animation-name    : button-after-close-animation-header;
+    animation-duration: 1s;
+}
+
+.header__menu-button_cross.header-button .bottom-bar {
+    animation-name: button-after-open-animation-header;
+    animation-duration: 1s;
+}
 
 @keyframes button-before-close-animation {
     0% {
-        transform: translateY(7px);
+        transform: translateY(10px);
     }
 
     50% {
@@ -353,6 +402,15 @@ header .bottom-bar {
 
     100% {
         transform: translateY(0px) rotate(45deg);
+    }
+}
+
+@keyframes button-before-close-animation-header {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
 
@@ -366,21 +424,22 @@ header .bottom-bar {
     }
 
     100% {
-        transform: translateY(7px);
+        transform: translateY(10px);
     }
 }
 
-.header__menu-button .bottom-bar {
-    animation-name: button-after-open-animation;
-}
-
-.header__menu-button_cross  .bottom-bar {
-    animation-name: button-after-close-animation;
+@keyframes button-before-open-animation-header {
+    0% {
+        transform: translateY(0px) ;
+    }
+    100% {
+        transform: translateY(10px);
+    }
 }
 
 @keyframes button-after-close-animation {
     0% {
-        transform: translateY(-7px);
+        transform: translateY(-10px);
     }
 
     50% {
@@ -391,6 +450,16 @@ header .bottom-bar {
         transform: translateY(0px) rotate(-45deg);
     }
 }
+
+@keyframes button-after-close-animation-header {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px) ;
+    }
+}
+
 
 @keyframes button-after-open-animation {
     0% {
@@ -402,24 +471,18 @@ header .bottom-bar {
     }
 
     100% {
-        transform: translateY(-7px);
+        transform: translateY(-10px);
     }
 }
- */
 
-
-.menu-panel__inner .top-bar{
-    width        : 37px;
-    margin-bottom: -12px;
-    transform    : rotate(45deg);
-
+@keyframes button-after-open-animation-header {
+    0% {
+        transform: translateY(0px) ;
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
-
-.menu-panel__inner .bottom-bar{
-    margin-top: 0;
-    transform : rotate(-45deg);
-}
-
 
 /* ------ intro ------ */
 
@@ -625,6 +688,10 @@ footer .row.content {
 
     .author {
         padding-bottom: 55px;
+    }
+    .menu-panel {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
