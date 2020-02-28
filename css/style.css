@@ -47,6 +47,18 @@ header h6 {
     font-weight   : 500;
     letter-spacing: 4px;
     line-height   : 16px;
+    text-transform: uppercase;
+}
+
+.pseudo-rectangle::after{
+    content: "";
+    background: #979797;
+    display: block;
+    width: 55px;
+    height: 0.5px;
+    bottom: 50%;
+    right: -83px;
+    position: absolute;
 }
 
 header .top-bar {
